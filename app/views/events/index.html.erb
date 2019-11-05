@@ -1,2 +1,11 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+
+<p>Ceci est la page d'accueil, qui affiche tous les évènements </p>
+
+<% @event.each do |index|  %>
+<%=	index.title %>
+<%=	index.start_date%>
+<%=	index.price %>
+<%= link_to "Page de l'event", event_path(index) %> 
+<%end%>
+
+
