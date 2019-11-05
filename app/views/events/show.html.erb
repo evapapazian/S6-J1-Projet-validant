@@ -2,3 +2,9 @@
 
 <p> Le titre: <%= @event.title %> </p>
 <p> Le contenu: <%= @event.description %> </p> 
+<p> Le créateur: <%= @event.administrator.first_name %> </p>
+<p> Le mail du créateur : <%= @event.administrator.email %> </p>
+<p> Le prix: <%= @event.price %> </p>
+<p> Le lieu: <%= @event.location %> </p>
+<p> La date de début: <%= @event.start_date %> 
+<!-- <p> La date de fin: <%= @event.finish_date %>  </p> -->
