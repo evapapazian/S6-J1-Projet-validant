@@ -25,6 +25,6 @@ end
 
 has_many :attendances
 has_many :users ,through: :attendance 
-
+belongs_to :administrator, class_name: "User"
 
 end 
