@@ -1,0 +1,24 @@
+
+
+<h1> Page de l'utilisateur </h1>
+
+</br>Prénom :<%= @user.first_name %>
+</br>Nom : <%= @user.last_name %>
+</br>Description : <%= @user.description %> 
+</br>Email : <%= @user.email %> 
+
+</br>Modifier vos paramètres:
+
+</br><%= link_to "Modifier l'email et/ou le mot de passe", edit_user_registration_path %> 
+
+</br>Vos events: 
+
+<% @event.each do |t| %>
+<%=	t.title %>
+<%=	t.start_date %>
+<%= t.price %>
+
+<%= link_to "Plus d'infos", event_path(t) %> 
+
+
+<% end %> 
